@@ -27,7 +27,23 @@
 }
 
 @media (max-width: 720px) {
+  .rmdb-navigation-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .rmdb-navigation-content a p {
+    width: auto;
+  }
+
   .rmdb-navigation-content p {
     font-size: 18px;
+    width: auto;
+  }
+   .rmdb-navigation-content p:last-child {
+    overflow: hidden;
+    width: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
