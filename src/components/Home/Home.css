@@ -1,0 +1,63 @@
+.rmdb-home {
+  margin-bottom: 20px;
+}
+
+.rmdb-home-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* margin-top: 30em; */
+  padding: 0 20px;
+  padding-top: 35em;
+  pointer-events: none;
+  position: relative;
+  z-index: 1000;
+}
+
+/* 
+** Before Content
+*/
+.beforeContent {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(33, 37, 41);
+  z-index: 1;
+  -webkit-transition: background-color 1000ms;
+  -o-transition: background-color 1000ms;
+  transition: background-color 1000ms;
+}
+.caption {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  -webkit-transition: background-color 1000ms;
+  -o-transition: background-color 1000ms;
+  transition: background-color 1000ms;
+}
+.insideContent {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: radial-gradient(at 150% top, rgba(33, 37, 41, 0.3) 55%, rgb(33, 37, 41) 70%);
+  /* background: teal; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-transition: background-color 1000ms;
+  -o-transition: background-color 1000ms;
+  transition: background-color 1000ms;
+}

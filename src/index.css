@@ -1,0 +1,9 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  overflow-y: scroll;
+  background:rgba(33, 37, 41);
+}
