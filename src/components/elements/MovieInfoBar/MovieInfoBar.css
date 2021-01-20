@@ -38,3 +38,14 @@
   float: left;
   margin-top: -3px;
 }
+
+@media (max-width: 720px) {
+  .rmdb-movieinfobar {
+    height: auto;
+    padding: 0;
+  }
+  .rmdb-movieinfobar-content-col {
+    width: 100%;
+    padding: 30px;
+  }
+}

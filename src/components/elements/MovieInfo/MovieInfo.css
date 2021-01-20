@@ -105,9 +105,11 @@ meter::-webkit-meter-even-less-good-value {
 
 @media (max-width: 720px) {
   .rmdb-movieinfo {
+    height: auto;
     padding: 0;
   }
   .rmdb-movieinfo-content {
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,12 +139,5 @@ meter::-webkit-meter-even-less-good-value {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  .rmdb-movieinfobar {
-    padding: 0;
-  }
-  .rmdb-movieinfobar-content-col {
-    padding: 30px;
-    width: 100%;
   }
 }
