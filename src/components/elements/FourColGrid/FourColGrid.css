@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 720px) {
   .rmdb-grid-content {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
   }
 
   .rmdb-grid-element:nth-child(2n+2) {

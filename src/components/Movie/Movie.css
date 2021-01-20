@@ -8,3 +8,9 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+@media (max-width: 720px) {
+  .rmdb-movie {
+    overflow: hidden;
+  }
+}

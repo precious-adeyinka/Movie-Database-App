@@ -102,3 +102,47 @@ meter::-webkit-meter-suboptimum-value {
 meter::-webkit-meter-even-less-good-value {
   background: linear-gradient(to bottom, #ee5f5b);
 }
+
+@media (max-width: 720px) {
+  .rmdb-movieinfo {
+    padding: 0;
+  }
+  .rmdb-movieinfo-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .rmdb-movieinfo-content .fa-film {
+    font-size: 35px;
+    bottom: 8px;
+    right: 10px;
+  }
+  .rmdb-movieinfo-thumb,
+  .rmdb-movieinfo-text {
+    height: auto;
+    width: 100%;
+    position: relative!important;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .rmdb-movieinfo-text {
+    padding: 20px 10px;
+  }
+  .rmdb-movieinfobar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .rmdb-movieinfobar {
+    padding: 0;
+  }
+  .rmdb-movieinfobar-content-col {
+    padding: 30px;
+    width: 100%;
+  }
+}

@@ -32,13 +32,13 @@ export const HeroCaption = ({ title, text, url }) => (
         <Link to={'/' + url} style={{
           textDecoration: 'none'
         }} >
-          <i className="la la-play"></i>&nbsp;Watch Now
+          <i className="la la-info"></i>&nbsp;View Details
         </Link>
 
         <Link to={'/' + url} className="btn-outline" style={{
           textDecoration: 'none'
         }} >
-          Watch Trailer
+          Read more
         </Link>
       </div>
     </div>
