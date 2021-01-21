@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { API_URL, API_KEY, IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from '../../config';
 import HeroImage from '../elements/HeroImage/HeroImage';
 import { HeroCaption } from '../elements/HeroImage/HeroImage';
-// import SearchBar from '../elements/SearchBar/SearchBar';
+import SearchBar from '../elements/SearchBar/SearchBar';
 import FourColGrid from '../elements/FourColGrid/FourColGrid';
 import MovieThumb from '../elements/MovieThumb/MovieThumb';
 import LoadMoreBtn from '../elements/LoadMoreBtn/LoadMoreBtn';
@@ -111,7 +111,6 @@ class Home extends Component {
                     // title={heroImage.original_title}
                     // text={heroImage.overview}
                   />
-                  {/* <SearchBar callback={this.searchItems}/> */}
                 </div>
               </React.Fragment>
             ) : null 
@@ -145,6 +144,11 @@ class Home extends Component {
             : null
           }
         </div>
+        
+        {/* Search Component */}
+        <SearchBar callback={this.searchItems}/>
+        {/* Show Search Bar Component */}
+        <div clasName="showSearchComponentBtn" onClick={this.openSearchComponent}><i className="fa fa-search"></i></div>
       </div>
     )
   }

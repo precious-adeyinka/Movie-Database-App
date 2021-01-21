@@ -7,6 +7,14 @@ class SearchBar extends Component {
   state = {
     value: ''
   }
+
+  // Search Bar Component Ref
+  searchComponentRef = React.createRef();
+
+  closeSearchComponent = e => {
+    this.searchComponentRef.current.classList.add('close');
+  }
+
   // Must have this here so we can reset it
   timeout = null;
 
@@ -28,7 +36,11 @@ class SearchBar extends Component {
     const { value } = this.state;
 
     return (
-      <div className="rmdb-searchbar">
+      <div className="rmdb-search-overlay" ref={this.searchComponentRef}>
+        {/* Close Search */}
+        <div className="rmdb-close-search-toggle" onClick={this.closeSearchComponent}>&times;</div>
+
+        <div className="rmdb-searchbar">
         <div className="rmdb-searchbar-content">
           <FontAwesome className="rmdb-fa-search" name="search" size="2x" />
           <input
@@ -39,6 +51,7 @@ class SearchBar extends Component {
             value={value}
           />
         </div>
+      </div>
       </div>
     )
   }
